@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Hangman-Game.ico">
+</head>
+<body>
+    <main class="main">
+        <div class="home">
+            <div class="data_home">
+                <h1 class="title_home">Hangman</h1>
+                <span class="subtitle_home"> Challenge</span> 
+                <p class="description_home">Press a key and discover the secret word <br> without being hanged. <br>(keypress not fire some mobile browsers).</p>
+                <p class="word_home"></p>
+                <span class="secret_home"></span>
+            </div>
+            <div class="canvas_home">
+                <canvas id="canvas"  width="385" height="453"> </canvas>
+                <img class="win" src="img/youWin.png" alt="win">
+                <img src="img/youLose.png" alt="lose" class="lose">
+            </div>
+
+        </div> <!-- home -->
+        <div class="div_button">
+            <input class="button newGame" type="button" value="New game">
+            <!-- <input class="button" type="button" value="Desist"> -->
+        </div>
+    </main>
+
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
